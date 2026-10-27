@@ -82,6 +82,11 @@
     #count span{font-size:.85rem;color:var(--mute)}
     #live{display:none;color:var(--amber);font-family:var(--display);font-size:1.8rem;margin:1.6rem 0 1rem}
 
+    .ad-section{padding-top:0; padding-bottom:0;}
+    .ad-box{background:rgba(255,255,255,.02); border:1px solid var(--line); border-radius:18px; padding:1rem; margin:0 auto; max-width:840px; overflow:hidden;}
+    .ad-box .ad-label{display:block; text-align:center; color:var(--mute); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; margin-bottom:.75rem;}
+    .adsbygoogle{min-height:120px}
+
     .music .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
     .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));border:1px solid var(--line);border-radius:18px;padding:1.3rem;box-shadow:0 18px 40px rgba(0,0,0,.14)}
     .card .tag{display:inline-block;background:rgba(233,164,92,.12);border:1px solid rgba(233,164,92,.3);color:var(--amber);padding:.35rem .7rem;border-radius:999px;font-size:.72rem;margin-bottom:1rem}
@@ -211,6 +216,23 @@
         <div class="cta" style="justify-content:center">
           <a class="btn solid" href="https://open.spotify.com/artist/7scJ4mmIBkhb2cbKcpVxyZ" target="_blank" rel="noopener">Spotify</a>
           <a class="btn ghost" href="https://music.apple.com/tr/artist/ahmed-harb/1768548127" target="_blank" rel="noopener">Apple Music</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ad-section">
+      <div class="wrap">
+        <div class="ad-box">
+          <span class="ad-label">Advertisement</span>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-9242996523787104"
+               data-ad-slot="YOUR_AD_SLOT_ID"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
         </div>
       </div>
     </section>
